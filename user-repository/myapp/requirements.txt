@@ -1,8 +1,0 @@
-shiny
-# leaflet
-terra
-httr
-arrow
-rstac
-purrr
-dplyr
