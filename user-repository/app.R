@@ -1,20 +1,20 @@
 
-# Lire le fichier
-packages <- readLines("packages.txt")
+# # Lire le fichier
+# packages <- readLines("packages.txt")
  
-# Installer les packages manquants
-packages_to_install <- packages[!packages %in% installed.packages()[, "Package"]]
-install.packages(packages_to_install)
+# # Installer les packages manquants
+# packages_to_install <- packages[!packages %in% installed.packages()[, "Package"]]
+# install.packages(packages_to_install)
  
-# Charger les packages
-lapply(packages, library, character.only = TRUE)
+# # Charger les packages
+# lapply(packages, library, character.only = TRUE)
 
-installed.packages()[, "Package"]
+# installed.packages()[, "Package"]
 
-# library(shiny)
-# library(leaflet)
-# library(terra)
-# library(httr)
+library(shiny)
+library(leaflet)
+library(terra)
+library(httr)
 # library(leafem)
 
 # -----------------------
