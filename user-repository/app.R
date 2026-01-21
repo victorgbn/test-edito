@@ -39,6 +39,8 @@
 
 # cat("✅ Tous les packages sont présents.\n\n")
 
+cat("🚀 MON app.R EST BIEN LANCÉ\n")
+
 library(shiny)
 # library(leaflet)
 library(terra)
