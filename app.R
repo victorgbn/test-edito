@@ -9,6 +9,8 @@ install.packages(packages_to_install)
 # Charger les packages
 lapply(packages, library, character.only = TRUE)
 
+installed.packages()[, "Package"]
+
 # library(shiny)
 # library(leaflet)
 # library(terra)
