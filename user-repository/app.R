@@ -40,7 +40,7 @@ if (length(missing_libs) > 0) {
 cat("✅ Tous les packages sont présents.\n\n")
 
 library(shiny)
-library(leaflet)
+# library(leaflet)
 library(terra)
 library(httr)
 # library(leafem)
