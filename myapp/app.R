@@ -47,6 +47,8 @@ library(terra)
 library(httr)
 # library(leafem)
 
+# le reste de mon code
+
 # -----------------------
 # Create example rasters
 # (replace with rast("seabass.nc"), rast("porpoise.nc"))

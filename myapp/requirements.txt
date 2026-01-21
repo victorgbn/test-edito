@@ -1,5 +1,5 @@
 shiny
-leaflet
+# leaflet
 terra
 httr
 arrow
