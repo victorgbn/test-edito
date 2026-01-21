@@ -11,6 +11,34 @@
 
 # installed.packages()[, "Package"]
 
+libs <- c(
+  "shiny",
+  "leaflet",
+  "terra",
+  "httr",
+  "leafem",
+  "viridis"
+)
+
+cat("🔍 Vérification des packages R...\n")
+
+for (lib in libs) {
+  if (requireNamespace(lib, quietly = TRUE)) {
+    cat("✅", lib, "est installé\n")
+  } else {
+    cat("❌", lib, "N'EST PAS installé\n")
+  }
+}
+
+cat("✅ Vérification terminée.\n")
+
+if (length(missing_libs) > 0) {
+  cat("\n🚨 Packages manquants :", paste(missing_libs, collapse = ", "), "\n")
+  stop("Arrêt de l'application : dépendances manquantes.")
+}
+
+cat("✅ Tous les packages sont présents.\n\n")
+
 library(shiny)
 library(leaflet)
 library(terra)
