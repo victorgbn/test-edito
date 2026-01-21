@@ -1,10 +1,18 @@
 
-pkgs <- readLines("requirements.txt")
+# Lire le fichier
+packages <- readLines("packages.txt")
+ 
+# Installer les packages manquants
+packages_to_install <- packages[!packages %in% installed.packages()[, "Package"]]
+install.packages(packages_to_install)
+ 
+# Charger les packages
+lapply(packages, library, character.only = TRUE)
 
-library(shiny)
-library(leaflet)
-library(terra)
-library(httr)
+# library(shiny)
+# library(leaflet)
+# library(terra)
+# library(httr)
 # library(leafem)
 
 # -----------------------
