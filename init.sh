@@ -1,0 +1,1 @@
+echo "Mon script s'est bien exécuté !";
